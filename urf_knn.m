@@ -1,8 +1,8 @@
 function c = urf_knn(P, y, Q,  k)
     n = size(P,2);      %retorna o tamanho da matriz da imagens de treino
-    if (nargin == 3)    %%se os argumntos da função forem iguais a três, atribui 1 a k
+    if (nargin == 3)    %se os argumntos da função forem iguais a três, atribui 1 a k
         k=1;
-    elseif (k>n)        %%se forem diferentes de 3 e maior que o tamanho da matriz, atribui n a k
+    elseif (k>n)        %se forem diferentes de 3 e maior que o tamanho da matriz, atribui n a k
         k=n;
     end
 
